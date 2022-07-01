@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.item-1, 
+.item-2 {
+	position: absolute;
+    display: block;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { top: -100%; opacity: 0; }
+  8.3%,25% { top: 25%; opacity: 1; }
+  33.33%, 100% { top: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { top: -100%; opacity: 0; }
+  41.63%, 58.29% { top: 25%; opacity: 1; }
+  66.66%, 100% { top: 110%; opacity: 0; }
+}
